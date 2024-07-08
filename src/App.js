@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Shop from './components/Shop';
+import Bank from './components/bank';
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
             exact
             path="/"
             element={
-              <Shop/>
+              <Bank/>
               }/>
         </Routes>
         </div>

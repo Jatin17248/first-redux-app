@@ -1,14 +1,16 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link, useLocation} from "react-router-dom";
 
 export default function Navbar() {
   let location = useLocation();
+  const amount = useSelector(state => state.amount)
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            MyRedux
+            MyRedux Bank
           </Link>
           <button
             className="navbar-toggler"
@@ -45,11 +47,11 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
-          </div>
+        
         </div>
-        <button className="btn btn-primary mx-1 flex-grow-1 "
-              >{"YourBalance:10000"}</button>
-      
+        <button className="btn btn-primary mx-1  "
+              >Your Balance: {amount}</button>
+        </div>
       </nav>
     </div>
   );
