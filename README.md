@@ -1,5 +1,3 @@
-Here's a README file for your first Redux app:
-
 ---
 
 # First Redux App
