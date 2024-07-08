@@ -3,14 +3,6 @@ import { Link, useLocation} from "react-router-dom";
 
 export default function Navbar() {
   let location = useLocation();
-  // const context = useContext(noteContext);
-  // const {setNotes} = context;
-  // let navigate = useNavigate();
-  // const handleLogout = () => {
-  //   setNotes([]);
-  //   localStorage.removeItem("token");
-  //   navigate('/login');
-  // };
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -57,31 +49,7 @@ export default function Navbar() {
         </div>
         <button className="btn btn-primary mx-1 flex-grow-1 "
               >{"YourBalance:10000"}</button>
-        {/* <div className="d-flex" style={{ whiteSpace: "nowrap" }}>
-          {
-            
-              localStorage.getItem('token')?(<>
-              
-              <Link to="/user" className="btn btn-primary mx-1 flex-grow-2 ">
-              <i className="bi bi-person-circle"></i>
-              </Link>
-              <button
-                onClick={handleLogout}
-                className="btn btn-primary mx-1 flex-grow-2 "
-              >
-                Log Out
-              </button></>
-              ):(
-              <div><Link to="/login" className="btn btn-primary mx-1 flex-grow-2 ">
-                Login
-              </Link>
-              <Link to="/signup" className="btn btn-primary mx-1 me-2">
-                Sign Up
-              </Link></div>
-              )
-            
-          }
-        </div> */}
+      
       </nav>
     </div>
   );
