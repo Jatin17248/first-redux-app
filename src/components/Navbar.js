@@ -22,7 +22,7 @@ export default function Navbar() {
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target=" /navbarSupportedContent"
+            data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -55,6 +55,8 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
+        <button className="btn btn-primary mx-1 flex-grow-1 "
+              >{"YourBalance:10000"}</button>
         {/* <div className="d-flex" style={{ whiteSpace: "nowrap" }}>
           {
             
